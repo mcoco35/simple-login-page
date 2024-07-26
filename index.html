@@ -51,13 +51,8 @@
         <button onclick="login()">Login</button>
         <p id="error-message" style="color: red;"></p>
     </div>
+    <script src="credentials.js"></script>
     <script>
-        // Hidden credentials
-        const credentials = {
-            username: 'admin',
-            password: 'password123'
-        };
-
         function login() {
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
