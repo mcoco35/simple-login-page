@@ -11,15 +11,16 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(to right, #0078d4, #00a4e4); /* Windows blue gradient */
+            background: url('path/to/your/image.jpg') no-repeat center center fixed; /* Background image */
+            background-size: cover; /* Make the background image cover the entire screen */
             margin: 0;
         }
         .login-container {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0,0,0,0.3);
-            width: 300px; /* Adjust width */
+            width: 300px;
             text-align: center;
         }
         .login-container h2 {
@@ -41,7 +42,7 @@
             padding: 10px;
             border: none;
             border-radius: 5px;
-            background-color: #0078d4; /* Windows button color */
+            background-color: #0078d4;
             color: #fff;
             font-size: 16px;
             cursor: pointer;
@@ -57,7 +58,7 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Other User</h2>
+        <h2>Sign in</h2>
         <input type="text" id="username" placeholder="Username">
         <input type="password" id="password" placeholder="Password">
         <button onclick="login()">Sign in</button>
